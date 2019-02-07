@@ -1,4 +1,9 @@
 class GameController < ApplicationController
+    def rules
+        render("move_templates/index.html.erb")
+    end
+        
+    
     def user_plays_rock
         
         @computer_move = ["rock", "paper", "scissors"].sample
